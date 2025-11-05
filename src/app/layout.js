@@ -3,16 +3,19 @@ import "./globals.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+
+const Cormorant = localFont({
+  src: "./fonts/CormorantGaramond-Regular.ttf",
+  variable: "--cormorant",
+  weight: "400",
+})
+
+const Lato = localFont({
+  src: "./fonts/Lato-Regular.ttf",
+  variable: "--lato",
+  weight: "400",
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -22,8 +25,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${Cormorant.variable} ${Lato.variable} antialiased`}
       >
         <Header/>
         {children}

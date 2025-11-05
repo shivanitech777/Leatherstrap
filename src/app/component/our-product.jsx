@@ -9,7 +9,7 @@ const collections = [
     id: 1,
     name: "Classic Tan Leather Strap",
     price: "₹3,499",
-    img: "/watch.jpg",
+    img: "/all.jpg",
   },
   {
     id: 2,
@@ -38,9 +38,9 @@ const collections = [
   
 ];
 
-export default function CollectionsPage() {
+export default function OurProduct() {
   return (
-    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-16 px-6 md:px-16 font-['Playfair_Display']">
+    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-16 px-6 md:px-16 font-['cormorant']">
     
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -48,8 +48,8 @@ export default function CollectionsPage() {
         transition={{ duration: 1 }}
         className="text-center mb-8"
       >
-        <h2 className="text-4xl md:text-5xl  text-[#6B8E23] tracking-wide">
-        New Collectionss
+        <h2 className="text-4xl md:text-5xl text-[#6B8E23] tracking-wide">
+        Our Premium Collections
         </h2>
         <p className="mt-4 text-[#4A4A4A] text-lg max-w-2xl mx-auto">
           Elegant handcrafted straps that embody luxury and timeless design.

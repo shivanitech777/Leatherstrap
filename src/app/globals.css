@@ -28,3 +28,12 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.lato {
+  font-family: var(--lato);
+} 
+
+.cormorant {
+  font-family: var(--cormorant);
+}

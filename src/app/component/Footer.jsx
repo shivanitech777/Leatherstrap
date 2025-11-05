@@ -26,10 +26,10 @@ export default function Footer() {
           transition={{ duration: 0.7 }}
         >
           <h2
-            className="text-3xl font-bold bg-gradient-to-r from-[#1E3A8A] via-[#B89B4A] to-[#4A2C2A] bg-clip-text text-transparent"
-            style={{ fontFamily: "'Walt Disney Script', 'Playfair Display', serif" }}
+            className="text-3xl cormorant bg-gradient-to-r from-[#9dae11] via-[#B89B4A] to-[#9dae11]  hover:opacity-90  bg-clip-text text-transparent"
+            style={{ fontFamily: "cormorant" }}
           >
-            LeatherAura
+            The Leather Auraa
           </h2>
           <p className="mt-3 text-sm text-[#CBBF9D] max-w-xs">
             Timeless elegance crafted in every leather strap. Designed for those who value luxury and precision.
@@ -42,13 +42,14 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <h3 className="text-xl font-semibold text-[#B89B4A] mb-3">Quick Links</h3>
+
+          <h3 className="text-xl cormorant text-[#B89B4A] mb-3">Quick Links</h3>
           <ul className="space-y-2">
             {["Home", "Shop", "Collections", "About", "Contact"].map((item, i) => (
               <li key={i}>
                 <Link
                   href={`/${item.toLowerCase()}`}
-                  className="hover:text-[#1E3A8A] transition-colors duration-300"
+                  className="hover:text-[#014911] transition-colors duration-300"
                 >
                   {item}
                 </Link>
@@ -63,8 +64,8 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          <h3 className="text-xl font-semibold text-[#B89B4A] mb-3">Get in Touch</h3>
-          <p className="text-sm text-[#CBBF9D]">
+          <h3 className="text-xl cormorant text-[#B89B4A] mb-3">Get in Touch</h3>
+          <p className="text-sm text-[#CBBF9D] lato">
             641, Satya The Hive, Dwarka Expressway, <br />
             Gurugram, Haryana 122505 <br />
             <span className="block mt-2">📞 +91 98765 43210</span>
@@ -80,7 +81,7 @@ export default function Footer() {
         className="relative z-10 text-center mt-10 border-t border-[#4A2C2A]/40 pt-4"
       >
         <p className="text-sm text-[#CBBF9D]">
-          © {currentYear} LeatherAura. All Rights Reserved.  
+          © {currentYear} TheLeatherAura. All Rights Reserved.  
         </p>
       </motion.div>
 

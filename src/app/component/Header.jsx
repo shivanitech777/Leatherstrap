@@ -1,15 +1,15 @@
-"use client";
-
+ "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navItems = ["Home", "Shop", "Collections", "About", "Contact"];
 
   return (
-    <header className="bg-[#0C0C0C] text-[#F2E8D5] font-['Playfair_Display'] fixed w-full top-0 z-50 shadow-xl border-b-2 border-[#4A2C2A]">
+    <header className="bg-[#0C0C0C] text-[#F2E8D5] cormorant fixed w-full top-0 z-50 shadow-xl border-b-2 border-[#9dae11]">
    
       <div className="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
         
@@ -18,13 +18,13 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, type: "spring" }}
           className="text-3xl font-bold tracking-wider"
-          style={{ fontFamily: "'Walt Disney Script', 'Playfair Display', serif" }}
+          style={{ fontFamily: "lato "}}
         >
           <Link
             href="/"
-            className="bg-gradient-to-r from-[#1E3A8A] via-[#B89B4A] to-[#4A2C2A] bg-clip-text text-transparent hover:opacity-90 transition-all duration-300"
+            className="bg-gradient-to-r from-[#9dae11] via-[#B89B4A] to-[#9dae11] bg-clip-text text-transparent hover:opacity-90 transition-all duration-300 cormorant"
           >
-            LeatherAura
+          The Leather Auraa
           </Link>
         </motion.div>
 
@@ -38,7 +38,7 @@ export default function Header() {
             >
               <Link
                 href={`/${item.toLowerCase()}`}
-                className="hover:text-[#B89B4A] transition-colors duration-300"
+                className="hover:text-[#9dae11] transition-colors duration-300 cormorant"
               >
                 {item}
               </Link>
@@ -73,7 +73,7 @@ export default function Header() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="md:hidden bg-[#1A1A1A] border-t border-[#4A2C2A] py-4 flex flex-col items-center space-y-4"
+          className="md:hidden bg-[#1A1A1A] border-t border-[#9dae11] py-4 flex flex-col items-center space-y-4"
         >
           {navItems.map((item, index) => (
             <motion.div
@@ -98,7 +98,7 @@ export default function Header() {
         initial={{ width: 0 }}
         animate={{ width: "100%" }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
-        className="h-[3px] bg-gradient-to-r from-[#1E3A8A] via-[#B89B4A] to-[#4A2C2A]"
+        className="h-[3px] bg-gradient-to-r from-[#9dae11] via-[#B89B4A] to-[#4A2C2A]"
       />
     </header>
   );

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import ProductCard from "./product-card";
 
 
-const collections = [
+const products = [
   {
     id: 1,
     name: "Classic Tan Leather Strap",
@@ -38,9 +38,9 @@ const collections = [
   
 ];
 
-export default function CollectionsPage() {
+export default function ProductPage() {
   return (
-    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-16 px-6 md:px-16 font-['Playfair_Display']">
+    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-16 px-6 md:px-16 font-[cormorant]">
     
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -49,7 +49,7 @@ export default function CollectionsPage() {
         className="text-center mb-8"
       >
         <h2 className="text-4xl md:text-5xl  text-[#6B8E23] tracking-wide">
-        New Collectionss
+          Premium Leather Collection
         </h2>
         <p className="mt-4 text-[#4A4A4A] text-lg max-w-2xl mx-auto">
           Elegant handcrafted straps that embody luxury and timeless design.
@@ -57,8 +57,8 @@ export default function CollectionsPage() {
       </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2  mx-auto">
-        {collections.map((product, index) => (
-         <ProductCard key={product.id} product={product} index={index} />
+        {products.map((product, index) => (
+          <ProductCard key={product.id} product={product} index={index} />
         ))}
       </div>
     </section>
