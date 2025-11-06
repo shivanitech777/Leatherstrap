@@ -9,7 +9,7 @@ const productDetails = {
   1: {
     name: "Classic Tan Leather",
     category: "Classic Collection",
-    price: "$89",
+    price: "₹8900",
     rating: 4.8,
     reviews: 124,
     image: "/straps.jpg",
