@@ -213,7 +213,7 @@ export default function CollectionsPage() {
         viewport={{ once: true }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4 font-bold">Can't Find Your Perfect Strap?</h2>
+          <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4 font-bold">Can&apos;t Find Your Perfect Strap?</h2>
           <p className="text-emerald-100 mb-8 font-light">
             Contact our team for custom orders and bespoke collections tailored to your preferences
           </p>

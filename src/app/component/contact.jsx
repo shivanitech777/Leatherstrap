@@ -61,7 +61,7 @@ export default function ContactPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          We're passionate about crafting premium leather watch straps. Have questions? Let's start a conversation.
+          We&apos;re passionate about crafting premium leather watch straps. Have questions? Let&apos;s start a conversation.
         </motion.p>
 
         {/* Gold Divider */}
