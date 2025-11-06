@@ -10,7 +10,7 @@ const products = [
     name: "Classic Tan Leather",
     category: "Classic Collection",
     price: "$89",
-    image: "/premium-tan-leather-watch-strap.jpg",
+    image: "/black.jpg",
     description: "Timeless elegance in natural tan leather",
   },
   {
@@ -18,7 +18,7 @@ const products = [
     name: "Royal Green Suede",
     category: "Premium Collection",
     price: "$129",
-    image: "/royal-green-luxury-leather-watch-strap.jpg",
+    image: "/damnnbro.jpg",
     description: "Sophisticated suede in deep emerald tones",
   },
   {
@@ -26,7 +26,7 @@ const products = [
     name: "Black Oxford",
     category: "Executive Collection",
     price: "$119",
-    image: "/black-oxford-leather-watch-strap-elegant.jpg",
+    image: "/single.jpg",
     description: "Professional black leather, perfectly refined",
   },
   {
@@ -34,7 +34,7 @@ const products = [
     name: "Cognac Croc",
     category: "Luxury Collection",
     price: "$149",
-    image: "/cognac-crocodile-leather-luxury-watch-strap.jpg",
+    image: "/blue strap.webp",
     description: "Exotic texture with rich cognac hues",
   },
   {
@@ -42,7 +42,7 @@ const products = [
     name: "Burgundy Leather",
     category: "Heritage Collection",
     price: "$109",
-    image: "/burgundy-leather-luxury-watch-strap.jpg",
+    image: "/black.jpg",
     description: "Deep wine tones with traditional craftsmanship",
   },
   {
@@ -50,7 +50,7 @@ const products = [
     name: "Navy Blue Premium",
     category: "Contemporary",
     price: "$119",
-    image: "/navy-blue-premium-leather-watch-strap.jpg",
+    image: "/m.webp",
     description: "Modern navy with sophisticated grain",
   },
 ]

@@ -27,7 +27,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-gradient-to-b from-emerald-900 to-black text-white border-t-2 border-amber-600/30 overflow-hidden">
-      {/* Background Animation */}
+     
       <motion.div
         animate={{ opacity: [0.1, 0.2, 0.1] }}
         transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY }}
@@ -35,7 +35,7 @@ export default function Footer() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-        {/* Main Footer Grid */}
+       
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -43,7 +43,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12"
         >
-          {/* Brand Section */}
+         
           <motion.div variants={itemVariants} className="space-y-4">
             <h3 className="text-2xl md:text-3xl font-serif font-bold">
               <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">Royal</span>
@@ -54,7 +54,7 @@ export default function Footer() {
             </p>
           </motion.div>
 
-          {/* Quick Links */}
+      
           <motion.div variants={itemVariants} className="space-y-4">
             <h4 className="text-lg font-semibold text-amber-400">Quick Links</h4>
             <ul className="space-y-3">
@@ -71,7 +71,6 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Contact Info */}
           <motion.div variants={itemVariants} className="space-y-4">
             <h4 className="text-lg font-semibold text-amber-400">Get in Touch</h4>
             <div className="space-y-3 text-sm md:text-base text-gray-300">
@@ -94,7 +93,7 @@ export default function Footer() {
           </motion.div>
         </motion.div>
 
-        {/* Divider */}
+        
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
@@ -103,7 +102,6 @@ export default function Footer() {
           className="h-px bg-gradient-to-r from-transparent via-amber-600 to-transparent mb-8"
         />
 
-        {/* Bottom Section */}
         <motion.div
           variants={itemVariants}
           initial="hidden"
@@ -113,7 +111,6 @@ export default function Footer() {
         >
           <p>© {currentYear} Royal Luxury. All Rights Reserved.</p>
 
-          {/* Social Links */}
           <div className="flex gap-4">
             {["Instagram", "Twitter", "LinkedIn"].map((social, i) => (
               <motion.a
@@ -128,7 +125,6 @@ export default function Footer() {
           </div>
         </motion.div>
 
-        {/* Animated Bottom Border */}
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}

@@ -26,7 +26,7 @@ export default function AboutSection() {
 
   return (
     <section className="relative bg-gradient-to-b from-[#F5F1E8] via-[#FFFBF5] to-[#F5F1E8] py-20 px-6 md:px-12 lg:px-20 overflow-hidden">
-      {/* Decorative accent */}
+      
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#D4AF37]/10 to-transparent rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
@@ -37,7 +37,7 @@ export default function AboutSection() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
         >
-          {/* Image Section */}
+         
           <motion.div variants={itemVariants} className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-[#1B5E3F]/20 to-[#D4AF37]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -54,9 +54,9 @@ export default function AboutSection() {
             </div>
           </motion.div>
 
-          {/* Content Section */}
+         
           <motion.div variants={itemVariants} className="space-y-8 order-1 lg:order-2">
-            {/* Decorative label */}
+         
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +66,7 @@ export default function AboutSection() {
               <span className="text-sm uppercase tracking-[0.15em] text-[#1B5E3F] font-semibold">Our Heritage</span>
             </motion.div>
 
-            {/* Heading */}
+            
             <motion.h2 variants={itemVariants} className="font-serif text-5xl md:text-6xl text-[#1B5E3F] leading-tight">
               Crafted with{" "}
               <span className="relative inline-block">
@@ -75,7 +75,7 @@ export default function AboutSection() {
               </span>
             </motion.h2>
 
-            {/* Descriptive paragraphs */}
+           
             <motion.div variants={itemVariants} className="space-y-5">
               <p className="text-lg text-[#3A3A3A] leading-relaxed font-light">
                 At The Leather Aura, we blend timeless craftsmanship with modern sophistication. Every leather strap we
@@ -90,7 +90,7 @@ export default function AboutSection() {
               </p>
             </motion.div>
 
-            {/* CTA Button */}
+          
             <motion.div variants={itemVariants} className="pt-6">
               <motion.button
                 whileHover={{
@@ -105,7 +105,6 @@ export default function AboutSection() {
               </motion.button>
             </motion.div>
 
-            {/* Stats or decorative divider */}
             <motion.div variants={itemVariants} className="pt-8 border-t border-[#D4AF37]/30 space-y-4">
               <div className="flex gap-8">
                 <div>

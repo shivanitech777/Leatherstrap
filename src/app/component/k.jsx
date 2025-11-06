@@ -59,12 +59,12 @@ export default function CategoryStraps() {
 
   return (
     <section className="relative w-full bg-gradient-to-b from-[#F5F1E8] via-[#FFFBF5] to-[#F5F1E8] py-20 px-6 md:px-12 lg:px-20 overflow-hidden">
-      {/* Decorative elements */}
+    
       <div className="absolute top-20 left-0 w-72 h-72 bg-gradient-to-br from-[#1B5E3F]/5 to-transparent rounded-full blur-3xl" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-gradient-to-bl from-[#D4AF37]/5 to-transparent rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
-        {/* Header Section */}
+      
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ export default function CategoryStraps() {
           </p>
         </motion.div>
 
-        {/* Cards Grid */}
+       
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -105,11 +105,11 @@ export default function CategoryStraps() {
               transition={{ duration: 0.4 }}
               className="group relative"
             >
-              {/* Card Background with gradient border effect */}
+              
               <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/20 to-[#1B5E3F]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
 
               <div className="relative bg-white rounded-2xl overflow-hidden border-2 border-[#E8DCC8] group-hover:border-[#D4AF37] transition-colors duration-500 shadow-lg group-hover:shadow-2xl">
-                {/* Image Container */}
+            
                 <div className="relative w-full h-64 overflow-hidden bg-[#F5F1E8]">
                   <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} className="w-full h-full">
                     <Image src={cat.img || "/placeholder.svg"} alt={cat.title} fill className="object-cover" />
@@ -117,7 +117,6 @@ export default function CategoryStraps() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1B5E3F]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
 
-                {/* Content Section */}
                 <div className="p-6 space-y-4">
                   <motion.h3
                     initial={{ opacity: 0.8 }}
@@ -128,7 +127,7 @@ export default function CategoryStraps() {
                   </motion.h3>
                   <p className="text-[#5A5A5A] text-sm leading-relaxed font-light">{cat.desc}</p>
 
-                  {/* Action indicator */}
+                  1
                   <motion.div
                     initial={{ opacity: 0, x: -10 }}
                     whileHover={{ opacity: 1, x: 0 }}

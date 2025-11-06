@@ -39,7 +39,7 @@ export default function ContactPage() {
 
   return (
     <section className="min-h-screen bg-gradient-to-b from-[#FFFBF5] via-white to-[#F5F1E8] text-[#1B5E3F] pt-24">
-      {/* Hero Section */}
+    
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function ContactPage() {
           We&apos;re passionate about crafting premium leather watch straps. Have questions? Let&apos;s start a conversation.
         </motion.p>
 
-        {/* Gold Divider */}
+       
         <motion.div
           className="mt-10 flex justify-center"
           initial={{ scaleX: 0 }}
@@ -75,10 +75,9 @@ export default function ContactPage() {
         </motion.div>
       </motion.div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {/* Contact Info Cards */}
+      
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -86,7 +85,7 @@ export default function ContactPage() {
             viewport={{ once: true, margin: "-100px" }}
             className="md:col-span-1 space-y-6"
           >
-            {/* Phone Card */}
+           
             <motion.div
               variants={itemVariants}
               className="group relative bg-white rounded-2xl p-8 border-2 border-[#E8DCC8] hover:border-[#D4AF37] transition-all duration-500 shadow-sm hover:shadow-xl"
@@ -108,7 +107,7 @@ export default function ContactPage() {
               </motion.div>
             </motion.div>
 
-            {/* Email Card */}
+          
             <motion.div
               variants={itemVariants}
               className="group relative bg-white rounded-2xl p-8 border-2 border-[#E8DCC8] hover:border-[#D4AF37] transition-all duration-500 shadow-sm hover:shadow-xl"
@@ -130,7 +129,7 @@ export default function ContactPage() {
               </motion.div>
             </motion.div>
 
-            {/* Location Card */}
+            
             <motion.div
               variants={itemVariants}
               className="group relative bg-white rounded-2xl p-8 border-2 border-[#E8DCC8] hover:border-[#D4AF37] transition-all duration-500 shadow-sm hover:shadow-xl"
@@ -148,7 +147,7 @@ export default function ContactPage() {
             </motion.div>
           </motion.div>
 
-          {/* Contact Form */}
+       
           <motion.form
             variants={itemVariants}
             initial="hidden"
@@ -165,9 +164,9 @@ export default function ContactPage() {
               Send Your Message
             </motion.h2>
 
-            {/* Form Fields */}
+        
             <div className="space-y-6">
-              {/* Name and Email Row */}
+              
               <div className="grid md:grid-cols-2 gap-6">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -218,7 +217,7 @@ export default function ContactPage() {
                 </motion.div>
               </div>
 
-              {/* Subject */}
+            
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -243,7 +242,6 @@ export default function ContactPage() {
                 />
               </motion.div>
 
-              {/* Message */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -268,7 +266,6 @@ export default function ContactPage() {
                 />
               </motion.div>
 
-              {/* Submit Button */}
               <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -296,7 +293,6 @@ export default function ContactPage() {
           </motion.form>
         </div>
 
-        {/* Map Section */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

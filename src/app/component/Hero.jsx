@@ -27,7 +27,7 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden min-h-screen pt-20 flex items-center justify-center bg-gradient-to-br from-white via-emerald-50/30 to-white">
-      {/* Background Elements */}
+     
       <div className="absolute inset-0 -z-10">
         <motion.div
           animate={{ opacity: [0.3, 0.5, 0.3] }}
@@ -43,7 +43,7 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-12 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-          {/* Left Content */}
+         
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -77,7 +77,7 @@ export default function Hero() {
               </motion.p>
             </motion.div>
 
-            {/* CTA Buttons */}
+         
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
@@ -98,7 +98,6 @@ export default function Hero() {
               </motion.div>
             </motion.div>
 
-            {/* Stats */}
             <motion.div variants={itemVariants} className="grid grid-cols-3 gap-4 pt-8 border-t border-emerald-200">
               {[
                 { number: "25+", label: "Years" },
@@ -113,7 +112,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Image Section */}
+        
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 80 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -129,7 +128,7 @@ export default function Hero() {
               />
             </div>
 
-            {/* Floating Accent */}
+           
             <motion.div
               animate={{ y: [0, -20, 0], rotateZ: [0, 2, 0] }}
               transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
