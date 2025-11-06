@@ -120,7 +120,7 @@ export default function Hero() {
             className="relative h-96 md:h-[600px]"
           >
             <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/premium-leather-luxury-product-showcase.jpg" alt="Premium Luxury Product" fill className="object-cover" />
+              <Image src="/green.jpg" alt="Premium Luxury Product" fill className="object-cover" />
               <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent"
                 animate={{ opacity: [0.2, 0.4, 0.2] }}
