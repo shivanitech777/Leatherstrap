@@ -1,105 +1,98 @@
- "use client";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import Link from "next/link";
+"use client"
 
+import { motion } from "framer-motion"
+import Link from "next/link"
+import { useState } from "react"
+import { Menu, X } from "lucide-react"
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const navItems = ["Home", "Shop", "Collections", "About", "Contact"];
+  const [open, setOpen] = useState(false)
+
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "Collections", href: "/collections" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
+  ]
 
   return (
-    <header className="bg-[#0C0C0C] text-[#F2E8D5] cormorant fixed w-full top-0 z-50 shadow-xl border-b-2 border-[#9dae11]">
-   
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
-        
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, type: "spring" }}
-          className="text-3xl font-bold tracking-wider"
-          style={{ fontFamily: "lato "}}
-        >
-          <Link
-            href="/"
-            className="bg-gradient-to-r from-[#9dae11] via-[#B89B4A] to-[#9dae11] bg-clip-text text-transparent hover:opacity-90 transition-all duration-300 cormorant"
-          >
-          The Leather Auraa
+    <header className="fixed w-full top-0 left-0 z-50 bg-white/75 backdrop-blur-xl shadow-sm border-b border-emerald-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+          <Link href="/" className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-emerald-700 to-emerald-900 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">R</span>
+            </div>
+            <span className="hidden sm:block text-xl font-serif tracking-wide">
+              <span className="text-emerald-900 font-bold">Royal</span>
+              <span className="text-amber-600">Luxury</span>
+            </span>
           </Link>
         </motion.div>
 
-        <nav className="hidden md:flex space-x-10 text-lg">
-          {navItems.map((item, index) => (
-            <motion.div
-              key={item}
-              initial={{ opacity: 0, y: -15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * index + 0.4, type: "spring" }}
-            >
-              <Link
-                href={`/${item.toLowerCase()}`}
-                className="hover:text-[#9dae11] transition-colors duration-300 cormorant"
-              >
-                {item}
-              </Link>
-            </motion.div>
-          ))}
-        </nav>
-
-      
-        <motion.button
-          whileTap={{ scale: 0.9 }}
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden focus:outline-none text-[#F2E8D5]"
-        >
-          <motion.svg
-            animate={{ rotate: menuOpen ? 90 : 0 }}
-            transition={{ duration: 0.3 }}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-8 h-8"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </motion.svg>
-        </motion.button>
-      </div>
-
-     
-      {menuOpen && (
+        {/* Desktop Menu */}
         <motion.nav
+          className="hidden md:flex gap-8 text-emerald-900 font-medium"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="md:hidden bg-[#1A1A1A] border-t border-[#9dae11] py-4 flex flex-col items-center space-y-4"
+          transition={{ delay: 0.2, duration: 0.6 }}
         >
-          {navItems.map((item, index) => (
+          {navLinks.map((link, i) => (
             <motion.div
-              key={item}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              key={i}
+              whileHover={{
+                scale: 1.05,
+                color: "#B8860B",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="relative"
             >
-              <Link
-                href={`/${item.toLowerCase()}`}
-                onClick={() => setMenuOpen(false)}
-                className="text-lg text-[#F2E8D5] hover:text-[#B89B4A] transition-colors duration-300"
-              >
-                {item}
+              <Link href={link.href} className="relative group">
+                {link.name}
+                <motion.div
+                  className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-amber-600 to-amber-500"
+                  initial={{ width: 0 }}
+                  whileHover={{ width: "100%" }}
+                  transition={{ duration: 0.3 }}
+                />
               </Link>
             </motion.div>
           ))}
         </motion.nav>
-      )}
 
-      <motion.div
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
-        className="h-[3px] bg-gradient-to-r from-[#9dae11] via-[#B89B4A] to-[#4A2C2A]"
-      />
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex gap-4 items-center">
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-emerald-900 focus:outline-none transition-colors hover:text-amber-600"
+          >
+            {open ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Dropdown */}
+      {open && (
+        <motion.div
+          initial={{ opacity: 0, y: -20, height: 0 }}
+          animate={{ opacity: 1, y: 0, height: "auto" }}
+          exit={{ opacity: 0, y: -20, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="md:hidden bg-white/95 backdrop-blur-md text-emerald-900 shadow-lg px-4 sm:px-6 py-4 space-y-3 border-b border-emerald-100"
+        >
+          {navLinks.map((link, i) => (
+            <motion.div
+              key={i}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setOpen(false)}
+              className="block py-2 hover:text-amber-600 transition-colors"
+            >
+              <Link href={link.href}>{link.name}</Link>
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
     </header>
-  );
+  )
 }
