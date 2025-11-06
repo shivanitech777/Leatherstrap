@@ -12,7 +12,7 @@ const productDetails = {
     price: "$89",
     rating: 4.8,
     reviews: 124,
-    image: "/premium-tan-leather-watch-strap.jpg",
+    image: "/straps.jpg",
     description: "Timeless elegance in natural tan leather that combines sophistication with comfort.",
     details: [
       "Premium Italian leather sourced from sustainable tanneries",

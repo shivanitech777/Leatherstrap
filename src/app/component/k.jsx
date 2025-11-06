@@ -126,8 +126,6 @@ export default function CategoryStraps() {
                     {cat.title}
                   </motion.h3>
                   <p className="text-[#5A5A5A] text-sm leading-relaxed font-light">{cat.desc}</p>
-
-                  1
                   <motion.div
                     initial={{ opacity: 0, x: -10 }}
                     whileHover={{ opacity: 1, x: 0 }}
