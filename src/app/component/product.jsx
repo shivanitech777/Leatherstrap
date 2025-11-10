@@ -40,13 +40,13 @@ const products = [
 
 export default function ProductPage() {
   return (
-    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-16 px-6 md:px-16 font-[cormorant]">
+    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-8 md:py-16 px-3 md:px-16 font-[cormorant]">
     
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-center mb-8"
+        className="text-center mb-4 md:mb-8"
       >
         <h2 className="text-4xl md:text-5xl  text-[#6B8E23] tracking-wide">
           Premium Leather Collection
@@ -56,7 +56,7 @@ export default function ProductPage() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2  mx-auto">
+      <div className="grid  grid-cols-2 lg:grid-cols-5 gap-2  mx-auto">
         {products.map((product, index) => (
           <ProductCard key={product.id} product={product} index={index} />
         ))}

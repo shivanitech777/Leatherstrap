@@ -9,7 +9,7 @@ const products = [
     id: 1,
     name: "Classic Tan Leather",
     category: "Classic Collection",
-    price: "₹8900",
+    price: "₹89000", 
     image: "/black.jpg",
     description: "Timeless elegance in natural tan leather",
   },
@@ -17,7 +17,7 @@ const products = [
     id: 2,
     name: "Royal Green Suede",
     category: "Premium Collection",
-    price: "₹12009",
+    price: "₹12000",
     image: "/damnnbro.jpg",
     description: "Sophisticated suede in deep emerald tones",
   },
@@ -25,7 +25,7 @@ const products = [
     id: 3,
     name: "Black Oxford",
     category: "Executive Collection",
-    price: "₹11009",
+    price: "₹11000",
     image: "/single.jpg",
     description: "Professional black leather, perfectly refined",
   },
@@ -33,7 +33,7 @@ const products = [
     id: 4,
     name: "Cognac Croc",
     category: "Luxury Collection",
-    price: "₹14009",
+    price: "₹14000",
     image: "/blue strap.webp",
     description: "Exotic texture with rich cognac hues",
   },
@@ -41,7 +41,7 @@ const products = [
     id: 5,
     name: "Burgundy Leather",
     category: "Heritage Collection",
-    price: "₹10009",
+    price: "₹10000",
     image: "/black.jpg",
     description: "Deep wine tones with traditional craftsmanship",
   },
@@ -49,7 +49,7 @@ const products = [
     id: 6,
     name: "Navy Blue Premium",
     category: "Contemporary",
-    price: "₹11009",
+    price: "₹11000",
     image: "/m.webp",
     description: "Modern navy with sophisticated grain",
   },
@@ -123,7 +123,7 @@ export default function CollectionsPage() {
         initial="hidden"
         animate="visible"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
           {products.map((product) => (
             <motion.div key={product.id} variants={itemVariants}>
               <Link href={`/collections/${product.id}`}>
@@ -131,7 +131,7 @@ export default function CollectionsPage() {
                   {/* Card Container */}
                   <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                     {/* Image Container */}
-                    <div className="relative h-64 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-50">
+                    <div className="relative h-44 md:h-64 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-50">
                       <motion.img
                         src={product.image}
                         alt={product.name}
@@ -142,7 +142,7 @@ export default function CollectionsPage() {
 
                       {/* Overlay with Category */}
                       <motion.div
-                        className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
+                        className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 md:p-4"
                         initial={{ opacity: 0 }}
                       >
                         <span className="text-amber-300 text-sm font-semibold font-serif">{product.category}</span>
@@ -160,7 +160,7 @@ export default function CollectionsPage() {
                     </div>
 
                     {/* Content */}
-                    <div className="p-6">
+                    <div className="p-3 md:p-6">
                       <motion.h2
                         className="font-serif text-xl font-bold text-slate-900 mb-2"
                         initial={{ opacity: 0 }}

@@ -78,7 +78,7 @@ export default function CollectionsPage() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid  grid-cols-2 lg:grid-cols-5 gap-2  mx-auto">
           {collections.map((product, index) => (
             <ProductCard key={product.id} product={product} index={index} />
           ))}

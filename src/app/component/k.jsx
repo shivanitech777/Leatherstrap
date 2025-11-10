@@ -70,7 +70,7 @@ export default function CategoryStraps() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-6 md:mb-10"
         >
           <motion.span
             initial={{ opacity: 0 }}
@@ -95,7 +95,7 @@ export default function CategoryStraps() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8"
         >
           {categories.map((cat, index) => (
             <motion.div
@@ -106,18 +106,18 @@ export default function CategoryStraps() {
               className="group relative"
             >
               
-              <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/20 to-[#1B5E3F]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/20 to-[#1B5E3F]/5 rounded md:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
 
-              <div className="relative bg-white rounded-2xl overflow-hidden border-2 border-[#E8DCC8] group-hover:border-[#D4AF37] transition-colors duration-500 shadow-lg group-hover:shadow-2xl">
+              <div className="relative bg-white rounded md:rounded-2xl overflow-hidden border-2 border-[#E8DCC8] group-hover:border-[#D4AF37] transition-colors duration-500 shadow-lg group-hover:shadow-2xl">
             
-                <div className="relative w-full h-64 overflow-hidden bg-[#F5F1E8]">
+                <div className="relative w-full h-40 md:h-64 overflow-hidden bg-[#F5F1E8]">
                   <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} className="w-full h-full">
                     <Image src={cat.img || "/placeholder.svg"} alt={cat.title} fill className="object-cover" />
                   </motion.div>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1B5E3F]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
 
-                <div className="p-6 space-y-4">
+                <div className="p-3 md:p-6 space-y-2 md:space-y-4">
                   <motion.h3
                     initial={{ opacity: 0.8 }}
                     whileHover={{ opacity: 1 }}
