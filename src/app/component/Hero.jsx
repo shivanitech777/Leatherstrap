@@ -69,14 +69,14 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 1 }}
-              className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500/20 to-amber-500/20 backdrop-blur-xl border border-emerald-400/30 shadow-lg shadow-emerald-500/20"
+              className="inline-flex items-center gap-3 px-5 py-2.5 bg-gradient-to-r from-emerald-500/20 to-amber-500/20 backdrop-blur-xl border border-emerald-400/30 shadow-lg shadow-emerald-500/20"
             >
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-emerald-400 to-amber-400 shadow-lg shadow-emerald-400/50"
               />
-              <span className="text-sm font-semibold text-emerald-100 tracking-wider">EXCLUSIVE LUXURY COLLECTION</span>
+              <span className="text-sm Libre text-emerald-100 tracking-wider">EXCLUSIVE LUXURY COLLECTION</span>
             </motion.div>
 
 
@@ -87,10 +87,10 @@ export default function Hero() {
                 transition={{ delay: 0.5, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 className="relative"
               >
-                <span className="block text-7xl sm:text-8xl   mb-4">
-                  <span className="block text-white drop-shadow-2xl Libre tracking-wider">Timeless</span>
-                  <span className="block bg-gradient-to-r from-emerald-400 via-emerald-300 to-amber-400 bg-clip-text text-transparent filter drop-shadow-[0_0_30px_rgba(16,185,129,0.5)] Libre tracking-wider pb-2">
-                    Elegance
+                <span className="block text-3xl sm:text-7xl md:text-8xl   mb-4">
+                  <span className="block text-white drop-shadow-2xl libreCaslonDisplay tracking-wider font-normal">TIMELESS</span>
+                  <span className="block bg-gradient-to-r from-emerald-400 via-emerald-300 to-amber-400 bg-clip-text text-transparent filter font-normal drop-shadow-[0_0_30px_rgba(16,185,129,0.5)] libreCaslonDisplay tracking-wider pb-2">
+                    ELEGANCE
                   </span>
                 </span>
                 
@@ -107,7 +107,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 1 }}
-                className="text-xl lg:text-xl text-emerald-100/90 leading-relaxed max-w-2xl "
+                className="text-xl lg:text-xl text-emerald-100/90 leading-relaxed max-w-2xl  "
               >
                 Where heritage meets innovation. Each masterpiece is meticulously crafted 
                 to transcend time, embodying the pinnacle of luxury and sophistication.
@@ -124,9 +124,9 @@ export default function Hero() {
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative px-12 py-5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-white  font-bold text-lg shadow-2xl shadow-emerald-500/50 overflow-hidden"
+                  className="group relative px-10 py-3 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-white  font-bold text-lg shadow-2xl shadow-emerald-500/50 overflow-hidden"
                 >
-                  <span className="relative z-10 flex items-center gap-3">
+                  <span className="relative z-10 flex items-center gap-3 poppinsDisplay">
                     Explore Collection
                     <motion.span
                       animate={{ x: [0, 5, 0] }}
@@ -150,7 +150,7 @@ export default function Hero() {
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group px-12 py-5 border-2 border-emerald-400/50 bg-emerald-500/10 backdrop-blur-xl text-emerald-100  font-bold text-lg hover:bg-emerald-500/20 hover:border-emerald-400 transition-all duration-300 shadow-lg shadow-emerald-500/20"
+                  className="group px-10 py-3 border-2  border-emerald-400/50 bg-emerald-500/10 backdrop-blur-xl text-emerald-100 text-lg hover:bg-emerald-500/20 hover:border-emerald-400 transition-all duration-300 shadow-lg shadow-emerald-500/20 Libre"
                 >
                   <span className="flex items-center gap-2">
                     Discover Heritage
@@ -160,11 +160,11 @@ export default function Hero() {
             </motion.div>
 
           
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.3, duration: 1 }}
-              className="hidden md:grid grid-cols-3 gap-8 pt-12 border-t border-emerald-500/20"
+              className="hidden md:grid grid-cols-3 gap-8 pt-12 border-t border-emerald-500/20 font-Libre"
             >
               {[
                 { number: "25+", label: "Years Legacy", icon: "★" },
@@ -192,7 +192,7 @@ export default function Hero() {
                   </div>
                 </motion.div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
       
@@ -202,7 +202,7 @@ export default function Hero() {
             transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
             className="lg:col-span-6 relative"
           >
-            <div className="relative h-[400px] lg:h-[600px]">
+            <div className="relative h-[400px] lg:h-[550px]">
              
               <motion.div
                 animate={{ 
@@ -248,9 +248,9 @@ export default function Hero() {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   transition={{ delay: 1.6, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                   whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="absolute -top-6 -right-6 px-8 py-4 bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-2xl shadow-emerald-500/50 border border-emerald-400/30 backdrop-blur-xl"
+                  className="absolute -top-6 -right-6 px-5 py-3 bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-2xl shadow-emerald-500/50 border border-emerald-400/30 backdrop-blur-xl"
                 >
-                  <p className="text-sm font-bold text-white uppercase tracking-widerst">Premium</p>
+                  <p className="text-xs font-bold text-white uppercase tracking-widerst">Premium</p>
                   <p className="text-xs text-emerald-100">Handcrafted</p>
                 </motion.div>
 
@@ -262,7 +262,7 @@ export default function Hero() {
                   className="absolute -bottom-6 -left-6 px-6 py-3 bg-gradient-to-br from-amber-500 to-amber-700 shadow-2xl shadow-amber-500/50 border border-amber-400/30 backdrop-blur-xl"
                 >
                   <p className="text-xs text-amber-100 uppercase tracking-widerr">Limited Edition</p>
-                  <p className="text-lg font-bold text-white">★★★★★</p>
+                  <p className="text-xs font-bold text-white">★★★★★</p>
                 </motion.div>
               </motion.div>
 
