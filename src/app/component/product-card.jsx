@@ -30,7 +30,7 @@ const ProductCard = ({ product, index }) => {
         <motion.h3
           initial={{ opacity: 0.8 }}
           whileInView={{ opacity: 1 }}
-          className="text-base md:text-lg font-serif font-semibold text-slate-900 group-hover:text-emerald-900 transition-colors duration-300"
+          className="text-base md:text-lg  text-slate-900 group-hover:text-emerald-900 transition-colors duration-300"
         >
           {product.name}
         </motion.h3>
@@ -38,7 +38,7 @@ const ProductCard = ({ product, index }) => {
         <motion.p
           initial={{ scale: 0.95 }}
           whileInView={{ scale: 1 }}
-          className="text-lg md:text-xl font-bold text-amber-600 font-serif tracking-wide"
+          className="text-lg md:text-xl  text-amber-600 font-serif tracking-wide"
         >
           {product.price}
         </motion.p>
@@ -46,7 +46,7 @@ const ProductCard = ({ product, index }) => {
         <motion.button
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full py-3 px-4 bg-gradient-to-r from-emerald-800 to-emerald-700 hover:from-emerald-700 hover:to-emerald-600 text-amber-50 uppercase tracking-widest font-semibold text-xs md:text-sm shadow-md hover:shadow-lg transition-all duration-300 rounded-md flex items-center justify-center gap-2 group/btn"
+          className="w-full py-3 px-4 bg-gradient-to-r from-emerald-800 to-emerald-700 hover:from-emerald-700 hover:to-emerald-600 text-amber-50 uppercase tracking-widest  text-xs md:text-sm shadow-md hover:shadow-lg transition-all duration-300 rounded-md flex items-center justify-center gap-2 group/btn"
         >
           <motion.div whileHover={{ rotate: 20, scale: 1.2 }} className="transition-transform">
             <MdOutlineShoppingCart size={20} />

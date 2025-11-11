@@ -2,8 +2,10 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 
 export default function CategoryStraps() {
+  const route = useRouter()
   const categories = [
     {
       title: "Full-Grain Leather",
@@ -58,7 +60,7 @@ export default function CategoryStraps() {
   }
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#F5F1E8] via-[#FFFBF5] to-[#F5F1E8] py-20 px-6 md:px-12 lg:px-20 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-b from-[#F5F1E8] via-[#FFFBF5] to-[#F5F1E8] py-14 px-6 md:px-12 lg:px-20 overflow-hidden">
     
       <div className="absolute top-20 left-0 w-72 h-72 bg-gradient-to-br from-[#1B5E3F]/5 to-transparent rounded-full blur-3xl" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-gradient-to-bl from-[#D4AF37]/5 to-transparent rounded-full blur-3xl" />
@@ -129,7 +131,8 @@ export default function CategoryStraps() {
                   <motion.div
                     initial={{ opacity: 0, x: -10 }}
                     whileHover={{ opacity: 1, x: 0 }}
-                    className="flex items-center gap-2 text-[#1B5E3F] font-semibold text-sm mt-4"
+                    onClick={()=> route.push('/collections')}
+                    className="flex items-center gap-2 text-[#1B5E3F] font-semibold text-sm mt-4 cursor-pointer"
                   >
                     <span>Learn More</span>
                     <motion.span

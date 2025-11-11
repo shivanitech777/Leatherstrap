@@ -5,15 +5,18 @@ import Footer from "./component/Footer";
 
 
 
-const Cormorant = localFont({
-  src: "./fonts/CormorantGaramond-Regular.ttf",
-  variable: "--cormorant",
+
+
+
+const Libre = localFont({
+  src: "./fonts/LibreCaslonDisplay-Regular.ttf",
+  variable: "--libre",
   weight: "400",
 })
 
-const Lato = localFont({
-  src: "./fonts/Lato-Regular.ttf",
-  variable: "--lato",
+const Poppins= localFont({
+  src: "./fonts/Poppins-Regular.ttf",
+  variable: "--Poppins",
   weight: "400",
 })
 
@@ -27,7 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
     
       <body
-        className={`${Cormorant.variable} ${Lato.variable} antialiased`}
+        className={` ${Libre.variable} ${Poppins.variable} antialiased`}
       >
         <Header/>
         {children}

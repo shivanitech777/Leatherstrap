@@ -40,7 +40,7 @@ const products = [
 
 export default function ProductPage() {
   return (
-    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-8 md:py-16 px-3 md:px-16 font-[cormorant]">
+    <section className=" bg-gradient-to-b from-[#F5F1E8] via-[#EAE3D5] to-[#E3DAC9] py-8  px-3 md:px-16 font-[cormorant]">
     
       <motion.div
         initial={{ opacity: 0, y: 40 }}

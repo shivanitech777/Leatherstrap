@@ -8,10 +8,13 @@ import CategoryStraps from './component/k'
 import ContactPage from './component/contact'
 
 
+
 const page = () => {
   return (
   <>
   <Hero/>
+  
+  
   <CategoryStraps/>
  
   <ProductPage/>
