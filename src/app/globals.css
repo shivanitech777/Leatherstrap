@@ -29,11 +29,11 @@ body {
 
   h1, h2, h3, h5, h6, .hero-heading {
     font-family: var(--libre, 'Libre Caslon Display', Georgia, 'Times New Roman', serif);
-    /* ensure strong weight for display headings */
+ 
     font-weight: 700;
   }
 
-  /* Utility classes to apply local fonts anywhere */
+  
   .libreCaslonDisplay, .font-libre-caslon {
     font-family: var(--libre, 'Libre Caslon Display', Georgia, 'Times New Roman', serif) !important;
   }

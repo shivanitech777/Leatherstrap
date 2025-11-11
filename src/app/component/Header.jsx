@@ -22,11 +22,11 @@ export default function Header() {
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-br from-emerald-700 to-emerald-900 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">R</span>
+              <span className="text-white Libre text-lg">R</span>
             </div>
             <span className="hidden sm:block text-xl font-serif tracking-wide">
-              <span className="text-emerald-900 font-bold">Royal</span>
-              <span className="text-amber-600">Luxury</span>
+              <span className="text-emerald-900 Libre">Royal</span>
+              <span className="text-amber-600 Libre ">Luxury</span>
             </span>
           </Link>
         </motion.div>

@@ -164,7 +164,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.3, duration: 1 }}
-              className="hidden md:grid grid-cols-3 gap-8 pt-12 border-t border-emerald-500/20 font-Libre"
+              className="hidden md:grid grid-cols-3 gap-8 pt-12 border-t border-emerald-500/20 Libre"
             >
               {[
                 { number: "25+", label: "Years Legacy", icon: "★" },

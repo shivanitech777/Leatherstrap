@@ -48,7 +48,7 @@ export default function ProductPage() {
         transition={{ duration: 1 }}
         className="text-center mb-4 md:mb-8"
       >
-        <h2 className="text-4xl md:text-5xl  text-[#6B8E23] tracking-wide">
+        <h2 className="text-4xl md:text-5xl  text-[#6B8E23] leading-tight  tracking-wide uppercase">
           Premium Leather Collection
         </h2>
         <p className="mt-4 text-[#4A4A4A] text-lg max-w-2xl mx-auto">

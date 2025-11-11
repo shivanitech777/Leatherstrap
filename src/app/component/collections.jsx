@@ -69,7 +69,7 @@ export default function CollectionsPage() {
             ✨ New Arrivals
           </motion.span>
 
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-emerald-900 to-amber-700 bg-clip-text text-transparent mb-4 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-emerald-900 to-amber-700 bg-clip-text text-transparent mb-4 leading-tight  tracking-wide uppercase">
             New Collections
           </h2>
           <p className="mt-6 text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">

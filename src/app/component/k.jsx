@@ -78,11 +78,12 @@ export default function CategoryStraps() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-sm uppercase tracking-[0.2em] text-[#1B5E3F] font-semibold"
+            className="text-sm uppercase tracking-[0.2em] text-[#1B5E3F] font-semibold "
           >
             Collection
           </motion.span>
-          <h2 className="font-serif text-5xl md:text-6xl text-[#1B5E3F] mt-4 mb-6 leading-tight">
+          <h2 className="Libre text-5xl md:text-6xl text-[#1B5E3F] mt-4 mb-6 leading-tight  tracking-wide uppercase
+          ">
             Premium Leather <span className="text-[#D4AF37]">Types</span>
           </h2>
           <p className="text-xl text-[#3A3A3A] max-w-3xl mx-auto leading-relaxed font-light">

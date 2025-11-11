@@ -34,35 +34,35 @@ export default function Footer() {
         className="absolute inset-0 bg-gradient-to-r from-emerald-900 via-black to-emerald-900 blur-3xl -z-10"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 ">
        
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12 "
         >
          
           <motion.div variants={itemVariants} className="space-y-4">
-            <h3 className="text-2xl md:text-3xl font-serif font-bold">
-              <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">Royal</span>
-              <span className="text-white ml-2">Luxury</span>
+            <h3 className="text-2xl md:text-3xl Libre">
+              <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent Libre">Royal</span>
+              <span className="text-white ml-2 Libre  ">Luxury</span>
             </h3>
-            <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+            <p className="text-gray-300 leading-relaxed text-sm md:text-base font-semibold Libre tracking-wider uppercase ">
               Redefining luxury through timeless elegance. Crafted for discerning tastes and unforgettable moments.
             </p>
           </motion.div>
 
       
           <motion.div variants={itemVariants} className="space-y-4">
-            <h4 className="text-lg font-semibold text-amber-400">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-amber-400 Libre tracking-wider uppercase">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "Collections", "About", "Contact", "Support"].map((item, i) => (
+              {["Home", "Collections", "About", "Contact"].map((item, i) => (
                 <li key={i}>
                   <Link
                     href={`/${item.toLowerCase()}`}
-                    className="text-gray-300 hover:text-amber-400 transition-colors duration-300 text-sm md:text-base"
+                    className="text-gray-300 hover:text-amber-400 transition-colors duration-300 text-sm md:text-base Libre tracking-wider uppercase font-semibold"
                   >
                     {item}
                   </Link>
@@ -72,20 +72,20 @@ export default function Footer() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-4">
-            <h4 className="text-lg font-semibold text-amber-400">Get in Touch</h4>
+            <h4 className="text-lg font-semibold text-amber-400 Libre tracking-wider uppercase">Get in Touch</h4>
             <div className="space-y-3 text-sm md:text-base text-gray-300">
               <p>
-                <span className="text-amber-400 font-semibold">Email:</span>
+                <span className="text-amber-400 Libre tracking-wider uppercase font-semibold">Email:</span>
                 <br />
                 hello@royalluxury.com
               </p>
               <p>
-                <span className="text-amber-400 font-semibold">Phone:</span>
+                <span className="text-amber-400 Libre tracking-wider uppercase font-semibold">Phone:</span>
                 <br />
                 +1 (555) 123-4567
               </p>
               <p>
-                <span className="text-amber-400 font-semibold">Address:</span>
+                <span className="text-amber-400 Libre tracking-wider uppercase font-semibold">Address:</span>
                 <br />
                 123 Luxury Avenue, Elite City, EC 12345
               </p>

@@ -60,7 +60,7 @@ export default function OurProduct() {
             </div>
           </motion.div>
 
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-emerald-900 via-emerald-800 to-amber-700 bg-clip-text text-transparent mb-4 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-emerald-900 via-emerald-800 to-amber-700 bg-clip-text text-transparent mb-4 leading-tight  tracking-wide uppercase">
             Our Premium Collections
           </h2>
           <p className="mt-6 text-gray-700 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
